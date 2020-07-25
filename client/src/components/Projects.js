@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 class Projects extends Component {
   constructor(props) {
@@ -8,6 +9,7 @@ class Projects extends Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
+    
         <div className="projects-grid">
           {/* First project here */}
           <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
