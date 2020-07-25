@@ -1,11 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import {LandingPage} from './landingpage';
-import {About} from './about';
-import {Contact} from './contact';
-import {Projects} from './projects';
-// import {Resume} from './resume';
-
+import  LandingPage  from './LandingPage';
+import  About  from './About';
+import Contact from './Contact';
+import Projects from './Projects';
+import Resume from './Resume';
 
 const Main = () => (
   <Switch>
@@ -13,7 +12,7 @@ const Main = () => (
     <Route path="/about" component={About} />
     <Route path="/contact" component={Contact} />
     <Route path="/projects" component={Projects} />
-    {/* <Route path="/resume" component={Resume} /> */}
+    <Route path="/resume" component={Resume} />
   </Switch>
 )
 
