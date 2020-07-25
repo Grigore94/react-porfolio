@@ -1,21 +1,21 @@
-import React, {Componnet} from 'react';
+import React from 'react';
 import './App.css';
-import {Layout, Header, Navigation,Drawer, Container} from "react-mdl";
-import{Main} from "./components/Main";
-import {Link} from "react-router-dom";
+import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
+import  Main  from "./components/Main.js";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="content">
+    <div className="demo-big-content">
       <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration:"none",color:"white"}} to="/">MyPorfolio</Link>} scroll>
+        <Header className="header-color" title={<Link style={{textDecoration:"none",color:"white",fontSize:"25px",fontFamily:""}} to="/">HOME</Link>} scroll>
           <Navigation>
             <Link to="/about">About</Link> 
             <Link to="/projects">My Projects</Link>
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration:"none",color:"black"}} to="/">MyPortfolio</Link>}>
+        <Drawer title={<Link style={{textDecoration:"none",color:"black"}} to="/">HOME</Link>}>
         <Navigation>
             <Link to="/about">About</Link> 
             <Link to="/projects">My Projects</Link>

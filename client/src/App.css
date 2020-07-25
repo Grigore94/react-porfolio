@@ -1,20 +1,3 @@
-.header-color {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.landing-grid {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .projects-grid {
   display: flex;
@@ -46,6 +29,7 @@
   background: white;
   color: black;
   margin-bottom: 20px;
+  
 }
 
 .contact-grid h2 {
@@ -78,16 +62,18 @@
 
 .banner-text {
   background-color: black;
-  opacity: .8;
-  width: 75%;
+  opacity: .7;
+  width: 50%;
   margin: auto;
   border-radius: 10px;
+  text-align: center;
 }
 
 .banner-text h1 {
   font-size: 66px;
   font-weight: bold;
   color: white;
+  margin-top: 80px;
 }
 
 .banner-text hr {
@@ -97,7 +83,7 @@
 }
 
 .banner-text p {
-  color: white;
+  color: rgb(163, 152, 152);
   font-size: 20px;
   padding: 1em;
 }
