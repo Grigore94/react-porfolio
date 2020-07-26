@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import Education from "./Education"
 import Eperience from "./Experience";
-import SkillsLanguages from "./SkilllsLanguages"
+import SkillsLanguages from "./SkilllsLanguages";
+import Meme from "../Images/meme.jpeg"
 
 class About extends Component {
   render() {
@@ -12,13 +13,13 @@ class About extends Component {
           <Cell col={4}>
             <div style={{ textAlign: "center" }}>
               <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man512x512.png"
-                alt="avatar"
-                style={{ height: "200px" }}
+                src={Meme}
+                alt="Picture of Me"
+                style={mypicture}
               />
             </div>
-            <h2 style={{ padding: "2em" }}>Grigore</h2>
-            <h4 style={{ color: "gray" }}>Programer</h4>
+            <h2 style={{ padding: "0.8em",textAlign:"center" }}>Grigore Mereacre</h2>
+            <h4 style={{ color: "gray" }}>Full Stack Web Developer</h4>
             <hr style={{ broderTop: "3px solid #833fb2", width: "50%" }} />
             <p>loremipsum</p>
             <hr style={{ broderTop: "3px solid #833fb2", width: "50%" }} />
@@ -52,7 +53,7 @@ class About extends Component {
            <hr style={{borderTop:"3px solid #e22947"}} />
            <h2>Skills</h2>
            <SkillsLanguages
-           skill="javascript"
+           skill="JavaScript"
            progress={55}
            />
            <SkillsLanguages
@@ -67,12 +68,25 @@ class About extends Component {
            skill="React"
            progress={20}
            />
+           <SkillsLanguages
+           skill="MongoDB"
+           progress={65}
+           /><SkillsLanguages
+           skill="MySQL"
+           progress={65}
+           />
 
           </Cell>
         </Grid>
       </div>
     );
   }
+}
+const mypicture = {
+  height: "350px",
+  borderRadius: "28px",
+  border: "1px solid gray",
+  boxShadow: "2px 7px 9px #696969	"
 }
 
 export default About;

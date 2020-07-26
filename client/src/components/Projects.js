@@ -19,13 +19,11 @@ class Projects extends Component {
               {/* Project#1 */}
             </CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+             
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>LiveDemo</Button>
-              <Button colored>CodePen</Button>
+              <Button>Github</Button>
+              <Button>Live Demo</Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
               <IconButton name="share" />
@@ -40,13 +38,11 @@ class Projects extends Component {
               {/* Project#2 */}
             </CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+              
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>LiveDemo</Button>
-              <Button colored>CodePen</Button>
+              <Button >Github</Button>
+              <Button >LiveDemo</Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
               <IconButton name="share" />
@@ -60,13 +56,11 @@ class Projects extends Component {
               {/* Project#3 */}
             </CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+          
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>LiveDemo</Button>
-              <Button colored>CodePen</Button>
+              <Button>Github</Button>
+              <Button>LiveDemo</Button>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}>
               <IconButton name="share" />

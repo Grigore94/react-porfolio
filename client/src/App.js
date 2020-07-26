@@ -8,18 +8,18 @@ function App() {
   return (
     <div className="demo-big-content">
       <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration:"none",color:"white",fontSize:"25px",fontFamily:""}} to="/">HOME</Link>} scroll>
+        <Header className="header-color" title={<Link style={{textDecoration:"none",color:"white",fontSize:"25px"}} to="/">🏠HOME</Link>} scroll>
           <Navigation>
-            <Link to="/about">About</Link> 
-            <Link to="/projects">My Projects</Link>
-            <Link to="/contact">Contact</Link>
+            <Link style={dreawerstyles} to="/about">About</Link> 
+            <Link style={dreawerstyles} to="/projects">My Projects</Link>
+            <Link style={dreawerstyles} to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration:"none",color:"black"}} to="/">HOME</Link>}>
-        <Navigation>
-            <Link to="/about">About</Link> 
-            <Link to="/projects">My Projects</Link>
-            <Link to="/contact">Contact</Link>
+        <Drawer style={{backgroundColor:"black",opacity:".8"}}title={<Link style={{textDecoration:"none",color:"white"}} to="/">🏠HOME</Link>}>
+        <Navigation >
+            <Link style={dreawerstyles} to="/about">About</Link> 
+            <Link style={dreawerstyles} to="/projects">My Projects</Link>
+            <Link style={dreawerstyles} to="/contact">Contact</Link>
           </Navigation>
         </Drawer>
         <Content>
@@ -30,6 +30,11 @@ function App() {
       
     </div>
   );
+}
+const dreawerstyles = {
+  textDecoration:"none",
+  color:"white",
+  fontSize:"25px",
 }
 
 export default App;

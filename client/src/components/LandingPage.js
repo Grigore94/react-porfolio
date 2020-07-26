@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
-// import Index from "./Background/index";
-// import Stars from "../Images/stars.jpg"
+import { Grid, Cell, Header } from 'react-mdl';
 import StarfieldAnimation from 'react-starfield-animation'
 import background from '../Images/stars.jpg'
 
@@ -37,7 +35,7 @@ class LandingPage extends Component {
           <Cell col={12}>
 
             <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
+              <h5>Full Stack Web Developer</h5>
 
             <hr/>
 
