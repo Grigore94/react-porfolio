@@ -65,11 +65,11 @@ class About extends Component {
            
            <h2 style={{textAlign:"center"}} >Skill Set</h2>
            <SkillsLanguages
-           skill="JavaScript"
+           skill="HTML/CSS"
            progress={55}
            />
            <SkillsLanguages
-           skill="HTML/CSS"
+           skill="JavaScript"
            progress={75}
            />
            <SkillsLanguages
@@ -104,7 +104,7 @@ class About extends Component {
            />
            <SkillsLanguages
            skill="Spanish"
-           progress={35}
+           progress={25}
            />
 
           </Cell>
