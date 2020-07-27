@@ -39,7 +39,7 @@ class LandingPage extends Component {
 
             <hr/>
 
-          <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+          <p>HTML/CSS | Bootstrap | JavaScript | React | NodeJS | Express | MongoDB</p>
 
         <div className="social-links">
 
