@@ -15,7 +15,7 @@ class About extends Component {
               <img
                 src={Meme}
                 alt="Picture of Me"
-                style={mypicture}
+                style={meme}
               />
             </div>
             <h2 style={{ padding: "0.8em",textAlign:"center" }}>Grigore Mereacre</h2>
@@ -113,7 +113,7 @@ class About extends Component {
     );
   }
 }
-const mypicture = {
+const meme = {
   height: "350px",
   borderRadius: "28px",
   border: "1px solid gray",

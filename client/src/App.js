@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="demo-big-content">
       <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration:"none",color:"white",fontSize:"25px"}} to="/">🏠HOME</Link>} scroll>
+        <Header className="header-color" title={<Link style={{textDecoration:"none",color:"white",fontSize:"25px"}} to="/"><span role="img">🏠</span>HOME</Link>} scroll>
           <Navigation>
             <Link style={dreawerstyles} to="/about">About</Link> 
             <Link style={dreawerstyles} to="/projects">My Projects</Link>
