@@ -8,6 +8,11 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(__dirname + '/public')); 
+const router = require('./routes/index.js');
+app.use('/',router);
+
+
 
 app.post("/api/form", (req, res) => {
   console.log(req.body);
