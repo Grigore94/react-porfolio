@@ -3,11 +3,15 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
 
-var connect = require("connect");
+const PORT = process.env.PORT || 3001;
 
-var app = connect.createServer().use(connect.static(__dirname + '/client'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+// Add routes, both API and view
+app.use(routes);
 
 app.post("/api/form", (req, res) => {
   console.log(req.body);
@@ -47,7 +51,7 @@ app.post("/api/form", (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
+
 
 app.listen(PORT, () => {
   console.log(`Server listent on port ${PORT}`);
