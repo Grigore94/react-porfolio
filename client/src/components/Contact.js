@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { SocialIcon } from "react-social-icons";
 import { Textfield, Button } from "react-mdl";
 import axios from "axios";
-import contact from "../Images/contact.gif";
+import contact from "../Images/contact.jpg";
 
 class Contact extends Component {
   constructor() {
@@ -47,8 +47,8 @@ class Contact extends Component {
               color: "white",
               height: "40px",
               marginTop: "45px",
-              marginBottom: "55px",
-              borderRadius: "15px",
+              marginBottom: "35px",
+              borderRadius: "15px 15px 0px 0px",
               justifyContent: "center",
             }}
           />
@@ -63,8 +63,7 @@ class Contact extends Component {
               border: "1px solid white",
               color: "white",
               height: "40px",
-              marginBottom: "55px",
-              borderRadius: "15px",
+              marginBottom: "35px",
             }}
           />
           <Textfield
@@ -77,14 +76,16 @@ class Contact extends Component {
               width: "70%",
               border: "1px solid white",
               color: "white",
-              height: "80px",
+              height: "45px",
               marginBottom: "55px",
-              borderRadius: "15px",
+              borderRadius: "0px 0px 15px 15px",
             }}
           />
+          <div>
           <Button raised colored onClick={this.handleSubmit} style={button}>
             Submit
           </Button>
+          </div>
         </div>
         <div className="social-links">
           {/* LinkedIn */}
@@ -93,7 +94,7 @@ class Contact extends Component {
             url="https://www.linkedin.com/in/grigore-m-824245186/"
             href="https://www.linkedin.com/in/grigore-m-824245186/"
             target="_blank"
-            bgColor="#F0F8FF"
+            bgColor="#E30303"
             style={{ cursor: "pointer", marginBottom: "7px" }}
           />
           {/* Github */}
@@ -103,7 +104,7 @@ class Contact extends Component {
             n
             href="https://github.com/Grigore94"
             target="_blank"
-            bgColor="#F0F8FF"
+            bgColor="#CBCE04"
             style={{ cursor: "pointer" }}
           />
           {/* Twiter */}
@@ -112,7 +113,7 @@ class Contact extends Component {
             url="https://twitter.com/GrigoreMrc"
             href="https://twitter.com/GrigoreMrc"
             target="_blank"
-            bgColor="#F0F8FF"
+            bgColor="#1035A9"
             style={{ cursor: "pointer" }}
           />
         </div>
@@ -122,10 +123,12 @@ class Contact extends Component {
 }
 const button = {
   marginBottom: "30px",
+  display:"auto",
   flex: "1",
+  textAlign:"center",
   justifyContent: "center",
   alignItems: "center",
-  width: "400px",
+  width: "300px",
   height: "40px",
   transition: "all 0.2s",
   border: "1px solid white",
@@ -138,6 +141,7 @@ const button = {
 const form = {
   textAlign: "center",
   onFocus: "this.value=''",
+  opacity:"0.9",
 };
 
 export default Contact;

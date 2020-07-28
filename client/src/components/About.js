@@ -102,10 +102,6 @@ class About extends Component {
            skill="Russian"
            progress={85}
            />
-           <SkillsLanguages
-           skill="Spanish"
-           progress={25}
-           />
 
           </Cell>
         </Grid>
