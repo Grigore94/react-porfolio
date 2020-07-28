@@ -20,7 +20,7 @@ app.post("/api/form", (req, res) => {
 
     let transporter = nodemailer.createTransport({
       host: "",
-      port: ,
+      port: 564,
       auth: {
         user: "",
         pass: "",
