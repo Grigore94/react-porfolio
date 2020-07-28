@@ -5,7 +5,7 @@ const app = express();
 
 var connect = require("connect");
 
-var app = connect.createServer().use(connect.static(__dirname + '/public/index.html'));
+var app = connect.createServer().use(connect.static(__dirname + '/client'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
