@@ -23,16 +23,18 @@
     "url": "https://github.com/Grigore94/react-porfolio/issues"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.18.7",
+    "react-social-icons": "^4.1.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
+    "bootstrap": "^4.5.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
+    "nodemailer": "^6.4.10",
     "raf": "^3.4.1",
-    "react-dom": "^16.13.1",
     "react-mdl": "^2.1.0",
     "react-router-dom": "^5.2.0",
     "react-sizeme": "^2.6.12",

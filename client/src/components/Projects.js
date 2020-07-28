@@ -35,8 +35,8 @@ class Projects extends Component {
               }}
             ></CardTitle>
             <CardText>
-              PRO-QUEST is a note taker for business and corporation to keep
-              track on daily completed tasks still on early stage of development
+              PRO-QUEST is a note taker app for business and corporation to keep
+              track on daily completed tasks.
             </CardText>
             <CardActions border>
               <Button
@@ -68,7 +68,7 @@ class Projects extends Component {
             ></CardTitle>
             <CardText>
               Favorite-Farm is web site in help to our users and farmers during
-              pandemic.One of the great future of it is finding 10 best stores
+              pandemic.One of the great feature of it is finding 10 best stores
               near you.
             </CardText>
             <CardActions border>
