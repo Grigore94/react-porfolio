@@ -5,7 +5,7 @@ const app = express();
 
 var connect = require("connect");
 
-var app = connect.createServer().use(connect.static(__dirname + '/public'));
+var app = connect.createServer().use(connect.static(__dirname + '/public/index.html'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -23,7 +23,7 @@ app.post("/api/form", (req, res) => {
 
     let transporter = nodemailer.createTransport({
       host: "",
-      port: 564,
+      port: 464,
       auth: {
         user: "",
         pass: "",
