@@ -12,9 +12,6 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-
-
-
 app.post("/api/form", (req, res) => {
   console.log(req.body);
   nodemailer.createTestAccount((err, account) => {
@@ -53,9 +50,12 @@ app.post("/api/form", (req, res) => {
   });
 });
 
-app.get("*", (req, res) =>{
-   res.send(__dirname + "./client/build/index.html");
-}) ;
+app.get("/", (req, res) => {
+  res.send(__dirname + "./client/build/index.html");
+});
+app.get("*", (req, res) => {
+  res.send(__dirname + "../client/build/index.html");
+});
 
 app.listen(PORT, () => {
   console.log(`Server listent on port ${PORT}`);
