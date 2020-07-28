@@ -8,9 +8,10 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(__dirname + '/public')); 
-const router = require('./routes/index.js');
-app.use('/',router);
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 
 
 
@@ -52,7 +53,9 @@ app.post("/api/form", (req, res) => {
   });
 });
 
-
+app.get("*", (req, res) =>{
+   res.send(__dirname + "./client/build/index.html");
+}) ;
 
 app.listen(PORT, () => {
   console.log(`Server listent on port ${PORT}`);
