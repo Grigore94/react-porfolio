@@ -40,15 +40,15 @@ class Contact extends Component {
             type="text"
             name="name"
             label="Name..."
-            defaultValue=""
+            defaultValue="Your Name Here..."
             style={{
               width: "70%",
               border: "1px solid white",
               color: "white",
               height: "40px",
-              marginTop: "45px",
+              marginTop: "65px",
               marginBottom: "55px",
-              borderRadius: "15px",
+              borderRadius: "15px 15px 0px 0px",
               justifyContent: "center",
             }}
           />
@@ -64,7 +64,6 @@ class Contact extends Component {
               color: "white",
               height: "40px",
               marginBottom: "55px",
-              borderRadius: "15px",
             }}
           />
           <Textfield
@@ -79,12 +78,14 @@ class Contact extends Component {
               color: "white",
               height: "80px",
               marginBottom: "55px",
-              borderRadius: "15px",
+              borderRadius: "0px 0px 15px 15px",
             }}
           />
+          <div>
           <Button raised colored onClick={this.handleSubmit} style={button}>
             Submit
           </Button>
+          </div>
         </div>
         <div className="social-links">
           {/* LinkedIn */}
@@ -122,10 +123,12 @@ class Contact extends Component {
 }
 const button = {
   marginBottom: "30px",
+  display:"auto",
   flex: "1",
+  textAlign:"center",
   justifyContent: "center",
   alignItems: "center",
-  width: "400px",
+  width: "300px",
   height: "40px",
   transition: "all 0.2s",
   border: "1px solid white",
@@ -138,6 +141,7 @@ const button = {
 const form = {
   textAlign: "center",
   onFocus: "this.value=''",
+  opacity:"0.9",
 };
 
 export default Contact;
