@@ -51,19 +51,19 @@ app.post("/api/form", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
+  res.send(__dirname + "./client/build/index.html");
 });
 
 app.get("/about", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
+  res.send(__dirname + "../client/build/about.js");
 });
 
 app.get("/projects", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
+  res.send(__dirname + "../client/build/projects.js");
 });
 
 app.get("/contact", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
+  res.send(__dirname + "../client/build/contsct.js");
 });
 
 app.get("*", (req, res) => {
