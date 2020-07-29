@@ -63,7 +63,7 @@ app.get("/projects", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-  res.send(__dirname + "../client/build/contsct.js");
+  res.send(__dirname + "../client/build/contact.js");
 });
 
 app.get("*", (req, res) => {
