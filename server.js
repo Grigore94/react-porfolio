@@ -55,10 +55,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send(__dirname + "./public/index.html")
-  if (err) {
-    res.status(500).send(err)
-  }
+  res.send(__dirname + "../client/build/index.html");
+});
+app.get("/contact", (req, res) => {
+  res.send(__dirname + "../client/build/index.html");
+});
+app.get("/projects", (req, res) => {
+  res.send(__dirname + "../client/build/index.html");
 });
 
 app.get("*", (req, res) => {
