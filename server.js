@@ -55,15 +55,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send(__dirname + "../client/build/components/about.js");
+  res.send(__dirname + "../client/build/index.html");
 });
 
 app.get("/projects", (req, res) => {
-  res.send(__dirname + "../client/build/projects.js");
+  res.send(__dirname + "../client/build/index.html");
 });
 
 app.get("/contact", (req, res) => {
-  res.send(__dirname + "../client/build/contact.js");
+  res.send(__dirname + "../client/build/index.html");
 });
 
 app.get("*", (req, res) => {
