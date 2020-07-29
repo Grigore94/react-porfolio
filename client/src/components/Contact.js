@@ -32,7 +32,7 @@ class Contact extends Component {
   render() {
     return (
       <div
-        style={{ height: "100%", background: `url(${contact}) center / cover` }}
+        style={{height:"900px", background: `url(${contact}) center / cover` }}
       >
         <div style={form}>
           <Textfield
