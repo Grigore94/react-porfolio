@@ -51,7 +51,7 @@ app.post("/api/form", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send(__dirname + "./client/build/index.html");
+  res.send(__dirname + "../client/build/index.html");
 });
 
 app.get("/about", (req, res) => {
