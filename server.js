@@ -55,7 +55,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send(__dirname + "../client/build/about.js");
+  res.send(__dirname + ".../client/build/components/about.js");
 });
 
 app.get("/projects", (req, res) => {
