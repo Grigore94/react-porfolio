@@ -61,14 +61,6 @@ app.get("/about", (req, res) => {
   }
 });
 
-app.get("/projects", (req, res) => {
-  res.send(__dirname + "../public/index.html");
-});
-
-app.get("/contact", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
-});
-
 app.get("*", (req, res) => {
   res.send(__dirname + "../client/build/index.html");
 });

@@ -17,7 +17,7 @@ function App() {
             <Link style={drawerstyles} to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer style={{backgroundColor:"black",opacity:".8"}}title={<Link style={{textDecoration:"none",color:"white"}} to="/"><span role="img">🏠</span>🏠HOME</Link>}>
+        <Drawer style={{backgroundColor:"black",opacity:".8"}}title={<Link style={{textDecoration:"none",color:"white"}} to="/"><span role="img">🏠</span>HOME</Link>}>
         <Navigation >
             <Link style={drawerstyles} to="/about">About</Link> 
             <Link style={drawerstyles} to="/projects">My Projects</Link>
