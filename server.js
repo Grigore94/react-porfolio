@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -51,21 +51,22 @@ app.post("/api/form", (req, res) => {
 });
 
 app.get("/", (req, res) => {
+  console.log(__dirname);
   res.send(__dirname + "../client/build/index.html");
 });
 
 app.get("/about", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
+  res.send(__dirname + "/client/build/index.html");
 });
 app.get("/contact", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
+  res.send(__dirname + "/client/build/index.html");
 });
 app.get("/projects", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
+  res.send(__dirname + "/client/build/index.html");
 });
 
 app.get("*", (req, res) => {
-  res.send(__dirname + "../client/build/index.html");
+  res.send(__dirname + "/client/build/index.html");
 });
 
 app.listen(PORT, () => {
