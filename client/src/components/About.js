@@ -21,7 +21,7 @@ class About extends Component {
             <h2 style={{ padding: "0.8em",textAlign:"center" }}>Grigore Mereacre</h2>
             <h4 style={{ color: "gray" }}>FullStack Web Developer</h4>
             <hr style={{ broderTop: "3px solid #833fb2", width: "50%" }} />
-            <p>Hello my friend</p>
+            <p>Hello my name is Grigore i can also go by Grisha I am a full stack web developer.I was always captivated by how things work and that is why I am here rught now.Hard working guy from young age and always had the results.I have passion for code and agriculture. </p>
             <hr style={{ broderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Address:</h5>
             <p>Nashville Tennesse</p>

@@ -20,19 +20,23 @@ class Contact extends Component {
   };
 
   async handleSubmit(e) {
-    e.preventDefault();
     const { name, email, message } = this.state;
     const form = await axios.post("/api/form", {
       name,
       email,
       message,
     });
+    
   }
+
 
   render() {
     return (
       <div
-        style={{height:"900px", background: `url(${contact}) center / cover` }}
+        style={{
+          height: "900px",
+          background: `url(${contact}) center / cover`,
+        }}
       >
         <div style={form}>
           <Textfield
@@ -47,7 +51,7 @@ class Contact extends Component {
               color: "white",
               height: "40px",
               marginTop: "45px",
-              marginBottom: "35px",
+              marginBottom: "45px",
               borderRadius: "15px 15px 0px 0px",
               justifyContent: "center",
             }}
@@ -63,7 +67,7 @@ class Contact extends Component {
               border: "1px solid white",
               color: "white",
               height: "40px",
-              marginBottom: "35px",
+              marginBottom: "45px",
             }}
           />
           <Textfield
@@ -82,9 +86,14 @@ class Contact extends Component {
             }}
           />
           <div>
-          <Button raised colored onClick={this.handleSubmit} style={button}>
-            Submit
-          </Button>
+            <Button
+              raised
+              colored
+              onClick={this.handleSubmit}
+              style={button}
+            >
+              Submit
+            </Button>
           </div>
         </div>
         <div className="social-links">
@@ -123,25 +132,23 @@ class Contact extends Component {
 }
 const button = {
   marginBottom: "30px",
-  display:"auto",
+  display: "auto",
   flex: "1",
-  textAlign:"center",
+  textAlign: "center",
   justifyContent: "center",
   alignItems: "center",
   width: "300px",
   height: "40px",
-  transition: "all 0.2s",
   border: "1px solid white",
   borderRadius: "13px",
-
-  ":hover": {
-    background: "green",
-  },
+  hover: {
+    variant:"secondary"
+  }
 };
 const form = {
   textAlign: "center",
   onFocus: "this.value=''",
-  opacity:"0.9",
+  opacity: "0.9",
 };
 
 export default Contact;

@@ -25,16 +25,19 @@ app.post("/api/form", (req, res) => {
         `;
 
     let transporter = nodemailer.createTransport({
-      host: "",
-      port: 464,
+      host: "smtp.gmail.com",
+      port: 465,
       auth: {
-        user: "",
-        pass: "",
+        user: "straightlineup2020@gmail.com",
+        pass: "straightlineup1994!",
       },
+      tls: {
+        rejectUnauthorized: false
+      }
     });
     let mailOptions = {
-      from: "",
-      to: "",
+      from: "<sender@gmail.com>",
+      to: "straightlineup2020@gmail.com",
       replyTo: "",
       subject: "New Message",
       text: req.body.message,
@@ -42,7 +45,7 @@ app.post("/api/form", (req, res) => {
     };
     transporter.sendMail(mailOptions, (err, info) => {
       if (err) {
-        return console.log(err);
+        return console.log(err)
       }
       console.log("Message sent: %s", info.message);
       console.log("message URL: %s", nodemailer.getTestMessageUrl(info));
