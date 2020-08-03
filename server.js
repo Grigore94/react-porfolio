@@ -28,8 +28,8 @@ app.post("/api/form", (req, res) => {
       host: "smtp.gmail.com",
       port: 465,
       auth: {
-        user: "straightlineup2020@gmail.com",
-        pass: "straightlineup1994!",
+        user: "",
+        pass: "",
       },
       tls: {
         rejectUnauthorized: false
@@ -37,7 +37,7 @@ app.post("/api/form", (req, res) => {
     });
     let mailOptions = {
       from: "<sender@gmail.com>",
-      to: "straightlineup2020@gmail.com",
+      to: "",
       replyTo: "",
       subject: "New Message",
       text: req.body.message,
