@@ -26,7 +26,7 @@ class Contact extends Component {
       email,
       message,
     });
-    
+
   }
 
 
@@ -49,9 +49,9 @@ class Contact extends Component {
               width: "70%",
               border: "1px solid white",
               color: "white",
-              height: "40px",
+              height: "47px",
               marginTop: "45px",
-              marginBottom: "45px",
+              marginBottom: "35px",
               borderRadius: "15px 15px 0px 0px",
               justifyContent: "center",
             }}
@@ -66,8 +66,8 @@ class Contact extends Component {
               width: "70%",
               border: "1px solid white",
               color: "white",
-              height: "40px",
-              marginBottom: "45px",
+              height: "47px",
+              marginBottom: "35px",
             }}
           />
           <Textfield
@@ -80,7 +80,7 @@ class Contact extends Component {
               width: "70%",
               border: "1px solid white",
               color: "white",
-              height: "45px",
+              height: "48px",
               marginBottom: "55px",
               borderRadius: "0px 0px 15px 15px",
             }}
@@ -141,14 +141,9 @@ const button = {
   height: "40px",
   border: "1px solid white",
   borderRadius: "13px",
-  hover: {
-    variant:"secondary"
-  }
 };
 const form = {
   textAlign: "center",
-  onFocus: "this.value=''",
-  opacity: "0.9",
 };
 
 export default Contact;
