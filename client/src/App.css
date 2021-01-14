@@ -48,7 +48,7 @@
 .social-links {
   display: flex;
   justify-content: space-between;
-  width: 15%;
+  width: 25%;
   margin: auto;
 }
 @media screen and (max-width: 1000px) {

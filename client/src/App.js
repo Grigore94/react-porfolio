@@ -10,15 +10,16 @@ function App() {
     
     <div className="demo-big-content">
       <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration:"none",color:"white",fontSize:"25px"}} to="/"><span role="img">🏠</span>HOME</Link>} scroll>
+        <Header className="header-color" title={<Link style={{textDecoration:"none",color:"white",fontSize:"25px"}} to="/">Home Page</Link>} scroll>
           <Navigation>
             <Link style={drawerstyles} to="/about">About</Link> 
             <Link style={drawerstyles} to="/projects">My Projects</Link>
             <Link style={drawerstyles} to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer style={{backgroundColor:"black",opacity:".8"}}title={<Link style={{textDecoration:"none",color:"white"}} to="/"><span role="img">🏠</span>HOME</Link>}>
+        <Drawer style={{backgroundColor:"black",opacity:".6"}}title={<Link style={{textDecoration:"none",color:"white"}} to="/"></Link>}>
         <Navigation >
+            <Link style={drawerstyles} to="/">Home Page</Link> 
             <Link style={drawerstyles} to="/about">About</Link> 
             <Link style={drawerstyles} to="/projects">My Projects</Link>
             <Link style={drawerstyles} to="/contact">Contact</Link>
@@ -36,7 +37,7 @@ function App() {
 const drawerstyles = {
   textDecoration:"none",
   color:"white",
-  fontSize:"25px",
+  fontSize:"30px",
 }
 
 export default App;

@@ -3,6 +3,7 @@ import { Textfield, Button } from "react-mdl";
 import { SocialIcon }from "react-social-icons";
 import axios from "axios";
 import contact from "../Images/contact.jpg";
+import Footer from "./Footer";
 
 class Contact extends Component {
   constructor() {
@@ -24,10 +25,12 @@ class Contact extends Component {
     const form = await axios.post("/api/form", {
       name,
       email,
-      message,
+      message
     });
-
+    
   }
+  
+    
 
 
   render() {
@@ -49,11 +52,9 @@ class Contact extends Component {
               width: "70%",
               border: "1px solid white",
               color: "white",
-              height: "47px",
-              marginTop: "45px",
-              marginBottom: "35px",
+              height: "57px",
+              marginTop: "15px",
               borderRadius: "15px 15px 0px 0px",
-              justifyContent: "center",
             }}
           />
           <Textfield
@@ -66,8 +67,8 @@ class Contact extends Component {
               width: "70%",
               border: "1px solid white",
               color: "white",
-              height: "47px",
-              marginBottom: "35px",
+              height: "57px",
+             
             }}
           />
           <Textfield
@@ -80,7 +81,7 @@ class Contact extends Component {
               width: "70%",
               border: "1px solid white",
               color: "white",
-              height: "48px",
+              height: "58px",
               marginBottom: "55px",
               borderRadius: "0px 0px 15px 15px",
             }}
@@ -89,10 +90,11 @@ class Contact extends Component {
             <Button
               raised
               colored
-              onClick={this.handleSubmit}
+              onClick={this.handleSubmit} 
+            
               style={button}
             >
-              Submit
+              Send Message
             </Button>
           </div>
         </div>
@@ -116,14 +118,13 @@ class Contact extends Component {
             style={{ cursor: "pointer" }}
             />
         </div>
+        <Footer/>
       </div>
     );
   }
 }
 const button = {
   marginBottom: "30px",
-  display: "auto",
-  flex: "1",
   textAlign: "center",
   justifyContent: "center",
   alignItems: "center",
