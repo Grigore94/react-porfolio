@@ -18,7 +18,7 @@ class LandingPage extends Component {
             alignItems: 'center'
           }}>
          <StarfieldAnimation
-          numParticles={400}
+          numParticles={5}
           style={{
             position: 'absolute',
             zIndex: 1,

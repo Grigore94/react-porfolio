@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { SocialIcon } from "react-social-icons";
 import { Textfield, Button } from "react-mdl";
+import { SocialIcon }from "react-social-icons";
 import axios from "axios";
 import contact from "../Images/contact.jpg";
 
@@ -106,16 +106,6 @@ class Contact extends Component {
             bgColor="#E30303"
             style={{ cursor: "pointer", marginBottom: "7px" }}
           />
-          {/* Github */}
-          <SocialIcon
-            network="github"
-            url="https://github.com/Grigore94"
-            n
-            href="https://github.com/Grigore94"
-            target="_blank"
-            bgColor="#CBCE04"
-            style={{ cursor: "pointer" }}
-          />
           {/* Twiter */}
           <SocialIcon
             network="twitter"
@@ -124,7 +114,7 @@ class Contact extends Component {
             target="_blank"
             bgColor="#1035A9"
             style={{ cursor: "pointer" }}
-          />
+            />
         </div>
       </div>
     );

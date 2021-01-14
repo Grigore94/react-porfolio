@@ -30,11 +30,9 @@
     "bootstrap": "^4.5.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "mongoose": "^5.3.16",
     "nodemailer": "^6.4.10",
     "react-mdl": "^2.1.0",
     "react-router-dom": "^5.2.0",
-    "react-sizeme": "^2.6.12",
     "react-social-icons": "^4.1.0",
     "react-starfield-animation": "^1.0.1"
   }

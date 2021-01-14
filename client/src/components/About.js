@@ -14,14 +14,14 @@ class About extends Component {
             <div style={{ textAlign: "center" }}>
               <img
                 src={Meme}
-                alt="Picture of Me"
+                alt="Me"
                 style={meme}
               />
             </div>
             <h2 style={{ padding: "0.8em",textAlign:"center" }}>Grigore Mereacre</h2>
             <h4 style={{ color: "gray" }}>FullStack Web Developer</h4>
             <hr style={{ broderTop: "3px solid #833fb2", width: "50%" }} />
-            <p>Hello my name is Grigore,I am a full stack web developer.I was always captivated by how things work and why certain things does not.Hard working,creative and able to learn quick.I have passion for code and agriculture. </p>
+            <p>Hello my name is Grigore,I am a web developer.I was always captivated by how things work and why certain things does not.Hard working,creative and able to learn quick.I have passion for code and agriculture. </p>
             <hr style={{ broderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Address:</h5>
             <p>Nashville Tennesse</p>
@@ -55,13 +55,7 @@ class About extends Component {
            />
            <hr style={{borderTop:"3px solid #e22947"}} />
 
-           {/* <h2>Experience</h2>
-           <Eperience
-           startYear={2016}
-           endYear={2017}
-           jobName="Dispacher"
-           jobDescription="kkdkdkdkdkd"
-           /> */}
+          
            
            <h2 style={{textAlign:"center"}} >Skill Set</h2>
            <SkillsLanguages

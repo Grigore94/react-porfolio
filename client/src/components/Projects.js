@@ -26,7 +26,7 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" ,marginBottom:"10px"}}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -38,14 +38,7 @@ class Projects extends Component {
               PRO-QUEST is a note taker app for business and corporation to keep
               track on daily completed tasks.
             </CardText>
-            <CardActions border>
-              <Button
-                href="https://github.com/alexanderabram/pro-quest"
-                target="_blank"
-                colored
-              >
-                GitHub
-              </Button>
+            <CardActions border style={{textAlign:"center"}}>
               <Button
                 href="https://pro-quest.herokuapp.com/signup.html"
                 target="_blank"
@@ -58,7 +51,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto",marginBottom:"10px" }}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -71,27 +64,26 @@ class Projects extends Component {
               pandemic.One of the great feature of it is finding 10 best stores
               near you.
             </CardText>
-            <CardActions border>
-              <Button
-                href="https://github.com/Grigore94/projectX"
-                target="_blank"
-                colored
-              >
-                GitHub
-              </Button>
-              <Button
+            <CardActions border style={{textAlign:"center"}}>
+              <Button 
                 href="https://grigore94.github.io/projectX/"
                 target="_blank"
                 colored
               >
                 Go to Web Site
               </Button>
-            </CardActions>
+            </CardActions >
             <CardMenu style={{ color: "#fff" }}></CardMenu>
           </Card>
 
+          
+        </div>
+      );
+    } else if (this.state.activeTab === 1) {
+      return (
+        <div>
           {/* Project 3 */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto",marginBottom:"10px" }}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -103,14 +95,7 @@ class Projects extends Component {
               Employee-Directory easy to use app to find all company employees
               by First or Last Name.
             </CardText>
-            <CardActions border>
-              <Button
-                href="https://github.com/Grigore94/employee-directory"
-                target="_blank"
-                colored
-              >
-                GitHub
-              </Button>
+            <CardActions border style={{textAlign:"center"}}>
               <Button
                 href="https://grigore94.github.io/employee-directory/"
                 target="_blank"
@@ -121,12 +106,6 @@ class Projects extends Component {
             </CardActions>
             <CardMenu style={{ color: "#fff" }}></CardMenu>
           </Card>
-        </div>
-      );
-    } else if (this.state.activeTab === 1) {
-      return (
-        <div>
-          <h1>This is NodeJS</h1>
         </div>
       );
     }
