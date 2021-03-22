@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { Textfield, Button } from "react-mdl";
-import { SocialIcon }from "react-social-icons";
+import { SocialIcon } from "react-social-icons";
 import axios from "axios";
 import contact from "../Images/contact.jpg";
-import Footer from "./Footer";
 
 class Contact extends Component {
   constructor() {
@@ -25,13 +24,9 @@ class Contact extends Component {
     const form = await axios.post("/api/form", {
       name,
       email,
-      message
+      message,
     });
-    
   }
-  
-    
-
 
   render() {
     return (
@@ -68,7 +63,6 @@ class Contact extends Component {
               border: "1px solid white",
               color: "white",
               height: "57px",
-             
             }}
           />
           <Textfield
@@ -87,19 +81,12 @@ class Contact extends Component {
             }}
           />
           <div>
-            <Button
-              raised
-              colored
-              onClick={this.handleSubmit} 
-            
-              style={button}
-            >
+            <Button raised colored onClick={this.handleSubmit} style={button}>
               Send Message
             </Button>
           </div>
         </div>
         <div className="social-links">
-          {/* LinkedIn */}
           <SocialIcon
             network="linkedin"
             url="https://www.linkedin.com/in/grigore-m-824245186/"
@@ -108,7 +95,7 @@ class Contact extends Component {
             bgColor="#E30303"
             style={{ cursor: "pointer", marginBottom: "7px" }}
           />
-          {/* Twiter */}
+
           <SocialIcon
             network="twitter"
             url="https://twitter.com/GrigoreMrc"
@@ -116,9 +103,8 @@ class Contact extends Component {
             target="_blank"
             bgColor="#1035A9"
             style={{ cursor: "pointer" }}
-            />
+          />
         </div>
-        <Footer/>
       </div>
     );
   }
