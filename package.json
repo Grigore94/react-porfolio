@@ -32,6 +32,7 @@
     "if-env": "^1.0.4",
     "nodemailer": "^6.4.10",
     "react-mdl": "^2.1.0",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-social-icons": "^4.1.0",
     "react-starfield-animation": "^1.0.1",

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Roll from "react-reveal"
 import {
   Tabs,
   Tab,
@@ -26,6 +27,7 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
+          
           <Card shadow={5} style={{ minWidth: "450", margin: "auto" ,marginBottom:"10px"}}>
             <CardTitle
               style={{
@@ -34,6 +36,7 @@ class Projects extends Component {
                 background: `url(${project1}) center / cover`,
               }}
             ></CardTitle>
+            
             <CardText>
               PRO-QUEST is a note taker app for business and corporation to keep
               track on daily completed tasks.
@@ -49,8 +52,10 @@ class Projects extends Component {
             </CardActions>
             <CardMenu style={{ color: "#fff" }}></CardMenu>
           </Card>
+          
 
           {/* Project 2 */}
+          
           <Card shadow={5} style={{ minWidth: "450", margin: "auto",marginBottom:"10px" }}>
             <CardTitle
               style={{
@@ -75,6 +80,7 @@ class Projects extends Component {
             </CardActions >
             <CardMenu style={{ color: "#fff" }}></CardMenu>
           </Card>
+          
 
           
         </div>
