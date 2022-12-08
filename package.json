@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "axios": "^0.18.1",
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "if-env": "^1.0.4",
     "nodemailer": "^6.4.10",
     "react-mdl": "^2.1.0",
